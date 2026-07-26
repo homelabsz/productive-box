@@ -15,6 +15,12 @@ Você é diurno 🐤 ou noturno 🦉? Vamos dar uma olhada 🧐!
 
 </div>
 
+> [!WARNING]
+> **Projeto descontinuado e arquivado.**
+> A ideia virou parte do meu repositório de perfil: [lpsm-dev/lpsm-dev](https://github.com/lpsm-dev/lpsm-dev).
+> O gráfico agora é renderizado direto na seção `$ commits` do README do perfil por [`scripts/commits.mjs`](https://github.com/lpsm-dev/lpsm-dev/blob/main/scripts/commits.mjs), sem Gist e sem GitHub Action dedicada.
+> Este repositório continua público só como referência: não recebe mais atualizações, issues ou pull requests.
+
 > [!NOTE]
 > Inspirado no projeto [productive-box](https://github.com/maxam2017/productive-box).
 
@@ -29,6 +35,7 @@ Você é diurno 🐤 ou noturno 🦉? Vamos dar uma olhada 🧐!
 - [Visão Geral](#vis%C3%A3o-geral)
   - [Objetivo](#objetivo)
   - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
+  - [Por que foi descontinuado](#por-que-foi-descontinuado)
 - [Setup](#setup)
   - [Prep work](#prep-work)
   - [Project setup](#project-setup)
@@ -54,9 +61,18 @@ Esse projeto usa a API graphQL do GitHub para obter os históricos de commits de
 
 Sempre gostei de customizar meu perfil do GitHub e navegando por alguns sites, achei essa iniciativa e decidi criar esse projeto para automatizar esse processo.
 
+## Por que foi descontinuado
+
+O projeto resolvia o problema em três peças separadas: um repositório com build TypeScript, uma GitHub Action empacotada em `dist/` e um Gist que precisava ser fixado no perfil à parte. Como o destino final sempre foi o meu próprio perfil, manter esse encadeamento custava mais do que entregava.
+
+O repositório de perfil já tem o padrão de dado versionado em `data/` renderizado para o README por `scripts/render.mjs`. A coleta virou mais um script sem dependências dentro desse mesmo fluxo: um arquivo de dados, um renderer, um workflow agendado. Menos repositórios, nenhum Gist, nenhum build para publicar.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Setup
+
+> [!IMPORTANT]
+> As instruções abaixo ficam registradas para quem já usa um fork. A automação deste repositório foi desligada e o Gist original não é mais atualizado.
 
 ## Prep work
 
@@ -89,19 +105,19 @@ Links relevantes para esse projeto:
 
 # Contribuição
 
-Gostaria de contribuir? Isso é ótimo! Temos um guia de contribuição para te ajudar. Clique [aqui](CONTRIBUTING.md) para lê-lo.
+O repositório está arquivado e não aceita mais issues nem pull requests. Se a ideia te interessa, o código vive em [lpsm-dev/lpsm-dev](https://github.com/lpsm-dev/lpsm-dev) ou você pode partir do projeto original de [maxam2017](https://github.com/maxam2017/productive-box).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Versionamento
 
-Para verificar o histórico de mudanças do projeto, acesse o arquivo [**CHANGELOG.md**](CHANGELOG.md).
+Para verificar o histórico de mudanças do projeto, acesse a página de [**releases**](https://github.com/lpsm-dev/productive-box/releases).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Troubleshooting
 
-Se você tiver algum problema, [abra uma issue nesse projeto](https://github.com/lpsm-dev/productive-box/issues).
+As issues deste repositório estão fechadas. Dúvidas sobre a versão em uso hoje: [abra uma issue no repositório de perfil](https://github.com/lpsm-dev/lpsm-dev/issues/new).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
